@@ -377,7 +377,7 @@
             numbersGrid.innerHTML = ""; 
             
             // Render backwards so newest is first
-            const reversedArray = [...drawnNumbers].reverse();
+            const reversedArray = [...drawnNumbers].sort();
 
             reversedArray.forEach((num, index) => {
                 const numElement = document.createElement('div');
